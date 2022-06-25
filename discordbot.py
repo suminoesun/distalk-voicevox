@@ -45,8 +45,6 @@ async def 接続(ctx):
                     await ctx.voice_client.disconnect()
                     await asyncio.sleep(0.5)
                     await ctx.author.voice.channel.connect()
-            else:
-                await ctx.author.voice.channel.connect()
     text_channel_id = ctx.channel.id
 
 @client.command()
